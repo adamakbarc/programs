@@ -1,0 +1,101 @@
+{
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": false,
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.lineNumbers": "relative",
+  // "workbench.editor.limit.enabled": true,
+  // "workbench.editor.limit.value": 2,
+  // "window.openFilesInNewWindow": "off",
+  // "workbench.editor.showTabs": false,
+  // "workbench.editor.closeEmptyGroups": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  // "explorer.openEditors.visible": 1,
+  "vim.statusBarColorControl": false,
+  "vim.handleKeys": {
+    "<C-d>": false,
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-b>": false,
+    "<C-w>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-n>": false,
+    "<C-p>": false,
+    "<C-j>": false,
+    "<C-k>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["u"],
+      "after": [],
+      "commands": [
+        {
+          "command": "undo",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<C-r>"],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["<ctrl+h>"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "security.workspace.trust.untrustedFiles": "open",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.suggest.localityBonus": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "explorer.confirmDragAndDrop": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.commandCenter": false,
+  "css.lint.validProperties": ["composes"],
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDelete": false,
+  "remote.autoForwardPortsSource": "hybrid",
+  "workbench.startupEditor": "none",
+  "telemetry.telemetryLevel": "off",
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  }
+}
